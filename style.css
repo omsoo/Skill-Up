@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+
+/*
+================
+Variables
+================
+ */
+:root {
+  --transition: all 0.3s linear;
+}
+
+/*
+==============
+Default Styles
+==============
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 100vh 80vh 100vh 24vh;
+
+  /* height: 100vh; */
+}
+
+.navbar {
+  background: orange;
+}
+
+.main {
+  background: blue;
+}
+
+.cards {
+  background: green;
+}
+
+.features-courses {
+  background: blue;
+}
+
+.footer {
+  background: green;
+}
