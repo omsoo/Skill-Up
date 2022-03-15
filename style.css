@@ -21,7 +21,13 @@ Default Styles
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Nanum Gothic";
+  color: rgb(51, 51, 51);
+}
+
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10vh 100vh 80vh 100vh 24vh;
@@ -29,38 +35,206 @@ Default Styles
   /* height: 100vh; */
 }
 
+header {
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid rgba(0, 0, 7, 0.05);
+  background: white;
+  /* padding: 30px 13%; */
+  /* overflow-x: hidden; */
+  /* background: orange; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.logo {
+  width: 8rem;
+  height: 4.5rem;
+  cursor: pointer;
+  margin-top: -0.3rem;
+}
+
 .navbar {
-  background: orange;
+  width: 50vw;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  /* background: white; */
+}
+.nav-links li {
+  /* background: orange; */
+  /* margin: 0 1rem; */
+  font-size: 1rem;
+  /* color: #F55212; */
+  display: inline-block;
+  padding: 8px 20px;
+}
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.AboutCamp-link {
+  color: #f55212;
+}
+.nav-campaign {
+  border: 4px solid #f55212;
+  height: 2.5rem;
+  width: 7.5rem;
+  padding-top: 5px;
 }
 
 .main {
   background: blue;
+  background-image: url("https://summit.cckorea.org/images/base/main_big.png");
+}
+
+.hgroups {
+  margin: 7rem 10rem 5rem 10rem;
+}
+
+.hero-txt {
+  width: 70%;
+  height: 8rem;
+  /* background: gray; */
+  color: #ec5242;
+}
+
+.creative-hero {
+  display: block;
+  background-image: linear-gradient(75deg, #df230e, #83361f, #ec5242);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  line-height: 3.5rem;
+  margin-top: 10px;
+}
+
+.hero-description {
+  width: 55%;
+  height: 4rem;
+  /* background: rgb(71, 15, 15); */
+  border: 2px solid rgb(240, 235, 235);
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-top: 6rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.hero-schedule {
+  /* background: red; */
+  width: 48%;
+  height: 6rem;
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+.hero-date {
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .cards {
-    
-  background: green;
-  margin: 0 6rem;
-  border: 1px solid brown;
+  /* background: green; */
+  background-image: url("https://summit.cckorea.org/images/base/pattern_bg.png");
+  /* margin: 0 6rem; */
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+  padding: 2rem 0;
+  /* border: 1px solid brown; */
+}
+
+.cards-title {
+  text-align: center;
+  color: aliceblue;
+  margin: 15px;
 }
 .sub-grid-1 {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  background: gray;
-  margin: 7rem 10rem 9rem 10rem;
-  grid-gap: 0.15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* background: gray; */
+  margin: 2rem 10rem 5.5rem 10rem;
+  grid-gap: 0.2rem;
   /* width: 100%; */
   height: 45%;
 }
-.card{
-    /* margin-right: 1rem; */
-    border: 2px solid red;
-    background: white;
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  /* margin-right: 1rem; */
+  /* border: 2px solid red; */
+  padding: 1rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  /* font-size: 0.5rem; */
+}
+.cd-title {
+  font-weight: bold;
+  color: #ec5242;
+  text-align: center;
+  /* margin-top: -rem; */
+  /* align-items: center; */
+}
+.cd-description {
+  margin-top: 1rem;
+  color: aliceblue;
+  line-height: 1.5rem;
 }
 
-.features-courses {
-  background: blue;
+.card-see-more {
+  text-align: center;
+  color: aliceblue;
+  /* border-bottom: 1px solid white; */
+  /* width: 6rem; */
+  /* background: orangered; */
+}
+.line-breaker-white {
+  /* border: 0.5px solid red; */
+  width: 260px;
+  margin: 0 auto;
+}
+
+.feautured-container {
+  /* background: blue; */
+  height: 80%;
+}
+
+.h2-speaker {
+  color: red;
+  text-align: center;
+  margin: 4rem 0 12px 0;
+  /* border-bottom: 3px solid green; */
+  /* margin: 1rem 10rem; */
+}
+
+.line-breaker {
+  border: 0.5px solid red;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: rgb(102, 14, 14);
+  margin: 2rem 10rem 0 10rem;
+  height: 85%;
+}
+
+.course {
+  border: 2px solid red;
+  background: white;
 }
 
 .footer {
@@ -77,6 +251,5 @@ Default Styles
     grid-template-columns: 1fr;
     grid-template-rows: 10vh 100vh 80vh 100vh 24vh; */
 
-    /* height: 100vh; */
-  }
+  /* height: 100vh; */
 }
