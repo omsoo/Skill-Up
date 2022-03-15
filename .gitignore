@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+!example.log
+node_modules
+logs/
+test.md
