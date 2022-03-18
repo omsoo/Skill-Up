@@ -21,21 +21,32 @@ Default Styles
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  /* color: rgba(255, 255, 255, 1); */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Nanum Gothic";
   color: rgb(51, 51, 51);
 }
 
 .container {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 100vh 80vh 100vh 24vh;
+  grid-template-rows: 10vh 100vh 80vh 100vh 35vh 35vh;
 
   /* height: 100vh; */
 }
 
-header {
+.header {
   position: fixed;
   width: 100vw;
   border-bottom: 1px solid rgba(0, 0, 7, 0.05);
@@ -52,11 +63,29 @@ header {
   margin: 0 10rem;
 }
 
+.narrow-nav {
+  background: #393939;
+  height: 35px;
+}
+
+.narrow-links {
+  float: right;
+  margin-right: 10rem;
+  /* background: green; */
+  width: 17%;
+  padding: 0.4rem 0;
+}
+
+.narrow-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   width: 8rem;
   height: 4.5rem;
   cursor: pointer;
-  margin-top: -0.3rem;
+  /* margin-top: -0.1rem; */
 }
 
 .navbar {
@@ -93,7 +122,7 @@ header {
 }
 
 .main {
-  background: blue;
+  /* background: blue; */
   background-image: url("https://summit.cckorea.org/images/base/main_big.png");
 }
 
@@ -121,12 +150,14 @@ header {
 .hero-description {
   width: 55%;
   height: 4rem;
-  /* background: rgb(71, 15, 15); */
-  border: 2px solid rgb(240, 235, 235);
+
+  border: 3px solid rgb(255, 255, 2550);
   font-size: 0.8rem;
   line-height: 1rem;
   margin-top: 6rem;
   padding: 0.3rem 0.5rem;
+  color: #333333;
+  font-family: "Nanum Gothic";
 }
 
 .hero-schedule {
@@ -140,6 +171,8 @@ header {
 .hero-date {
   font-weight: bold;
   font-size: 1.8rem;
+  font-family: "Verdana", sans-serif;
+  color: rgb(87, 87, 87);
 }
 
 .cards {
@@ -174,7 +207,7 @@ header {
   justify-items: center;
   /* margin-right: 1rem; */
   /* border: 2px solid red; */
-  padding: 1rem 1rem;
+  padding: 1rem 0.9rem;
   background: rgba(255, 255, 255, 0.1);
   /* font-size: 0.5rem; */
 }
@@ -189,6 +222,8 @@ header {
   margin-top: 1rem;
   color: aliceblue;
   line-height: 1.5rem;
+  /* margin-left: 1rem; */
+  text-align: center;
 }
 
 .card-see-more {
@@ -237,8 +272,80 @@ header {
   background: white;
 }
 
-.footer {
-  background: green;
+.partners {
+  background: #393939;
+}
+.partner-cover {
+  margin: 0 17rem;
+  padding: 3rem 0;
+}
+
+.partner-subject {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.partner-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem; */
+  margin-top: 3rem;
+}
+
+.partlogo {
+  /* width: 70px; */
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
+    contrast(10.5%);
+}
+
+.partlogo img {
+  display: block;
+  height: auto;
+  width: 80%;
+}
+
+.partner-subject {
+  color: rgb(173, 168, 168);
+  font-size: "Nanum Gothic";
+  font-size: large;
+}
+
+#foot-logo {
+  width: 10rem;
+  height: 6rem;
+  cursor: pointer;
+  /* margin-top: -0.3rem; */
+}
+
+footer {
+  /* background: orange; */
+}
+
+.footer-cover {
+  margin: 0 15rem;
+  padding: 3rem 0;
+}
+.footer-flex {
+  display: flex;
+}
+
+.foot-logo {
+  margin-right: 3rem;
+}
+.foot-txt {
+  padding: 1rem 0;
+}
+
+.foot-txt-l1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.narrow-ul > li {
+  color: white;
+  font-size: 0.813em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -252,4 +359,11 @@ header {
     grid-template-rows: 10vh 100vh 80vh 100vh 24vh; */
 
   /* height: 100vh; */
+}
+
+footer {
+}
+
+.footer-bg {
+  /* background: rgb(46, 46, 46); */
 }
