@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
 
 /*
 ================
@@ -41,9 +41,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 100vh 80vh 100vh 35vh 35vh;
+  /* grid-template-rows: 10vh 100vh 80vh 100vh 35vh 35vh; */
 
   /* height: 100vh; */
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 10vh 100vh 80vh 70vh 30vh; */
 }
 
 .header {
@@ -111,7 +117,7 @@ body {
   color: #0088a9;
 }
 
-.AboutCamp-link {
+.nav-links .AboutCamp-link {
   color: #f55212;
 }
 .nav-campaign {
@@ -131,12 +137,12 @@ body {
 }
 
 .hero-txt {
-  width: 70%;
-  height: 8rem;
-  /* background: gray; */
-  color: #ec5242;
-}
+  width: 75%;
+  height: auto;
 
+  /* color: #ec5242; */
+}
+/* 
 .creative-hero {
   display: block;
   background-image: linear-gradient(75deg, #df230e, #83361f, #ec5242);
@@ -145,7 +151,92 @@ body {
   font-size: 4rem;
   line-height: 3.5rem;
   margin-top: 10px;
+} */
+
+/* About Page */
+
+.hero-about {
+  width: 55%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.about-hero-description {
+  /* height: 220px; */
+  display: inline-block;
+  height: auto;
+  font-size: 0.875em;
+  background-color: white;
+  width: 80%;
+  border: 1px solid #dfdfdf;
+  line-height: 25px;
+  padding: 2rem;
+  margin: 0 7rem;
+  color: #333333;
+  font-family: "Nanum Gothic";
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.about-date {
+  text-align: center;
+  margin-top: 60px;
+  line-height: 1.5rem;
+}
+
+.about-section-1 {
+  /* background: red; */
+  border-top: 4px solid rgb(246, 243, 248);
+}
+.about-section-1-container {
+  padding: 3rem 0;
+  width: 60%;
+  height: auto;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.about-sect-1-subject {
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin-bottom: 2rem; */
+}
+.about-sect-1-description {
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-flex-img {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.about-logo-container {
+  /* background: blue; */
+  border: 3px solid rgb(228, 224, 224);
+  width: 550px;
+  height: 200px;
+  padding: 1rem 8rem;
+}
+
+.about-section-2 {
+  border-top: 4px solid rgb(246, 243, 248);
+}
+.about-footer {
+  color: white;
+  margin: 2rem 0;
+}
+
+.past-year-img {
+  width: 48%;
+  height: auto;
+  justify-content: space-between;
+}
+
+/* End of About */
 
 .hero-description {
   width: 55%;
@@ -154,7 +245,7 @@ body {
   border: 3px solid rgb(255, 255, 2550);
   font-size: 0.8rem;
   line-height: 1rem;
-  margin-top: 6rem;
+  margin-top: 10px;
   padding: 0.3rem 0.5rem;
   color: #333333;
   font-family: "Nanum Gothic";
@@ -247,9 +338,42 @@ body {
 .h2-speaker {
   color: red;
   text-align: center;
-  margin: 4rem 0 12px 0;
+  margin: 2.5rem 0 12px 0;
   /* border-bottom: 3px solid green; */
   /* margin: 1rem 10rem; */
+}
+
+.speaker-bios {
+  padding: 1.1rem 1.5rem;
+}
+
+.speaker-img {
+  width: 140px;
+  height: 150px;
+}
+
+.speaker-txt-1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line-checker {
+  background: rgb(212, 209, 209);
+  width: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-txt-2 {
+  color: #ec5242;
+  margin-bottom: 0.6rem;
+  line-height: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+}
+.speaker-txt-3 {
+  margin-top: 0.6rem;
+  line-height: 1.4rem;
 }
 
 .line-breaker {
@@ -257,19 +381,31 @@ body {
   width: 50px;
   margin: 0 auto;
 }
+.about-breaker {
+  border: 0.5px solid red;
+  width: 20px;
+  margin: 40px auto;
+}
+.about-breaker2 {
+  border: 0.5px solid red;
+  width: 20px;
+  margin: 10px auto;
+}
 
 .courses {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background: rgb(102, 14, 14);
+  /* background: rgb(102, 14, 14); */
   margin: 2rem 10rem 0 10rem;
   height: 85%;
 }
 
 .course {
-  border: 2px solid red;
+  display: flex;
+  /* border: 2px solid red; */
   background: white;
+  padding: 1rem 0;
 }
 
 .partners {
