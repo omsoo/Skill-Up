@@ -80,10 +80,10 @@ body {
 
 .narrow-links {
   float: right;
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 
   /* background: green; */
-  width: 18%;
+  width: 30%;
   padding: 0.4rem 0;
 }
 
@@ -184,11 +184,11 @@ body {
   height: auto;
   font-size: 1.2em;
   background-color: white;
-  width: 80%;
+  width: 100%;
   border: 1px solid #dfdfdf;
   line-height: 2rem;
   padding: 2rem;
-  margin: 0 7rem;
+  margin: 0 1rem;
   color: #333;
   font-family: var(--ff-primary);
   text-align: center;
@@ -447,8 +447,7 @@ body {
 }
 
 .partlogo {
-  filter:
-    invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
     contrast(10.5%);
 }
 
@@ -486,6 +485,14 @@ body {
   margin-right: 3rem;
 }
 
+.about-sect-1-subject {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-right: -70px;
+  /* color: red; */
+}
+
 .foot-txt {
   padding: 1rem 0;
 }
@@ -509,6 +516,10 @@ body {
 
     /* left: 42%; */
     left: 42%;
+  }
+
+  .narrow-nav {
+    opacity: 0;
   }
 
   .nav-container {
@@ -539,6 +550,18 @@ body {
     background: var(--clr-primary);
     transition: top 1s ease;
     display: none;
+  }
+
+  .about-logo-container {
+    margin-left: 50px;
+  }
+
+  /* .about-breaker2 {
+    margin-left: 270px;
+  } */
+
+  .about-section-1-container {
+    margin: 1rem 39px;
   }
 
   .nav-links li a {
@@ -584,6 +607,12 @@ body {
     line-height: 1.5rem;
   }
 
+  .about-sect-1-description {
+    margin-left: 20px;
+    margin-right: -90px;
+    margin-top: 20px;
+  }
+
   .hero-schedule {
     width: 100%;
     height: auto;
@@ -615,6 +644,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 90px;
+    width: 100%;
   }
 
   .sub-grid-1 {

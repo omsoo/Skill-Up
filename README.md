@@ -8,10 +8,6 @@ The project is still in the works. Constructive feedback is encouraged. Just com
 - CSS
 - Javascript
 
-## Live Demo
-
-[Live Demo Link](https://github.com/omsoo/Skill-Up)
-
 ## Author
 
 👤 **OMSOO**
