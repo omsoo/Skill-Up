@@ -1,6 +1,7 @@
-// const speakOne = document.getElementById("speaker-1");
-// const speakTwo = document.getElementById("speaker-2");
-// const speakThree = document.getElementById("speaker-3");
+const openMenu = document.querySelector(".openMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const mainMenu = document.querySelector(".nav-links");
+
 const speaker = document.querySelector(".courses");
 const showMoreButton = document.querySelector(".show-more");
 
@@ -11,39 +12,39 @@ let width = window.innerWidth;
 const arrayData = [
   {
     name: "Yochai Benkler",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_01.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
   {
     name: "Kilnam Chon",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_02.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
   {
     name: "SohYeong Noh",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_03.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
   {
     name: "Julia Leda",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_04.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
   {
     name: "Lila  Tretikov",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_05.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
   {
     name: "Ryan Merkley",
-    description: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
+    biography: `Berkman Professor of Enterpreneurial Legal Studies at Havard Law School `,
     speakerImage: "./images/speaker_06.png",
-    biography: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
+    description: `Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.`,
   },
 ];
 
@@ -78,3 +79,15 @@ showMoreButton.addEventListener("click", () => {
     showMoreButton.innerHTML = showMore ? "show less" : "show more";
   }
 });
+
+openMenu.addEventListener("click", show);
+
+closeMenu.addEventListener("click", close);
+
+function show() {
+  mainMenu.style.display = "flex";
+  mainMenu.style.top = "0";
+}
+function close() {
+  mainMenu.style.top = "-100%";
+}

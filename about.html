@@ -9,6 +9,10 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
   </head>
   <body>
     <div class="aboutContainer">
@@ -34,17 +38,23 @@
             </div>
           </div>
           <div class="nav-container">
-            <img class="logo" src="./images/skill-up-3.png" alt="logo" />
+            <div class="openMenu"><i class="fas fa-bars"></i></div>
+            <a href="#">
+              <img class="logo" src="./images/skill-up-3.png" alt="logo" />
+            </a>
             <nav class="navbar">
               <ul class="nav-links">
                 <li class="about">
                   <a class="AboutCamp-link" href="./about.html">About</a>
                 </li>
-                <li>Program</li>
-                <li>Join</li>
-                <li>Sponsor</li>
-                <li>News</li>
-                <li class="AboutCamp-link nav-campaign">Campaign</li>
+                <li><a href="#">Program </a></li>
+                <li><a href="#"> Join </a></li>
+                <li><a href="#"> Sponsor </a></li>
+                <li><a href="#"> News </a></li>
+                <li class="AboutCamp-link nav-campaign">
+                  <a href="#"> Campaign </a>
+                </li>
+                <div class="closeMenu"><i class="fas fa-times"></i></div>
               </ul>
             </nav>
           </div>
@@ -53,6 +63,7 @@
       <main class="main">
         <hgroup class="hgroups">
           <h1>
+            <p class="about-hero-toptxt">"Hello! Sharing world"</p>
             <img
               class="hero-about"
               src="./images/about_hero-img.png"
@@ -80,7 +91,7 @@
               2022! Global</span
             >
             <br />
-            <span>susummit2022@sunigeria.org</span>
+            <span class="about-host-email">susummit2022@sunigeria.org</span>
           </h3>
         </hgroup>
       </main>
@@ -110,7 +121,7 @@
       <div class="about-section-2">
         <div class="about-section-1-container">
           <p class="about-sect-1-subject">See the past CC Global Summits</p>
-
+          <hr class="about-breaker2" />
           <p class="about-sect-1-description">
             Take a look at the last two CC Global Summits which took place in
             Buenos Aires and in Warsaw.
@@ -118,14 +129,18 @@
           <div class="about-flex-img">
             <img
               class="past-year-img"
-              src="./images/about_2013_hover.png"
+              src="./images/about_2013_hove.png"
               alt=""
             />
-            <img class="past-year-img" src="./images/about_2011.png" alt="" />
+            <img
+              class="past-year-img"
+              src="./images/about_2011_hover.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
-      <footer class="partners">
+      <!-- <footer class="partners">
         <div class="footer-cover">
           <div class="footer-flex">
             <div class="foot-logo">
@@ -133,9 +148,62 @@
             </div>
             <div class="about-footer">
               <p class="about-footer-title">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit Numquam
+                doloribus reprehenderit vitae odio, sunt necessitatibus dolorem
+                eaque natus modi officia sit ad magni vel, dolores repellendus
+                totam placeat sequi quaerat?
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+      <div class="partners">
+        <div class="page-footer">
+          <div class="partner-cover footer-bg">
+            <div class="partner-subject">Partner</div>
+            <hr class="line-breaker" />
+            <div class="partner-flex">
+              <div class="partlogo moz_logo" style="color: white">
+                <a href="#" target="_blank">
+                  <img src="./images/mozilla.png" alt="" />
+                </a>
+              </div>
+              <div class="partlogo goo_info">
+                <a href="#" target="_blank">
+                  <img src="./images/google2.png" alt="" />
+                </a>
+              </div>
+              <div class="partlogo nav_info">
+                <a href="#" target="_blank">
+                  <img src="./images/naver2.png" alt="" />
+                </a>
+              </div>
+              <div class="partlogo dau_info">
+                <a href="#" target="_blank">
+                  <img src="./images/kakao2.png" alt="" />
+                </a>
+              </div>
+              <div class="partlogo air_info">
+                <a href="#" target="_blank">
+                  <img src="./images/airbnb2.png" alt="" />
+                </a>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-cover">
+          <div class="footer-flex">
+            <div class="foot-logo">
+              <img id="foot-logo" src="./images/skill-up-3.png" alt="" />
+            </div>
+            <div class="foot-txt">
+              <p class="foot-txt-l1">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
-              <p class="about-footer-txt">
+              <p class="foot-txt-l2">
                 Numquam doloribus reprehenderit vitae odio, sunt necessitatibus
                 dolorem eaque natus modi officia sit ad magni vel, dolores
                 repellendus totam placeat sequi quaerat?
