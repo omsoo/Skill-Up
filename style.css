@@ -139,14 +139,17 @@ body {
 .main {
   /* background: blue; */
   background-image: url("https://summit.cckorea.org/images/base/main_big.png");
+  /* background-size: 1400px 500px; */
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
 .hgroups {
-  margin: 7rem 10rem 5rem 10rem;
+  margin: 190px 10rem 5rem 10rem;
 }
 
 .hero-txt {
-  width: 75%;
+  width: 67%;
   height: auto;
 
   /* color: #ec5242; */
@@ -249,14 +252,14 @@ body {
 
 .hero-description {
   width: 55%;
-  height: 4rem;
+  height: 6rem;
 
   border: 3px solid rgb(255, 255, 2550);
   font-size: 0.8rem;
   line-height: 1rem;
   margin-top: 10px;
-  padding: 0.3rem 0.5rem;
-  color: #333333;
+  padding: 1.5rem 0.5rem;
+  color: var(--clr-primary);
   font-family: var(--ff-primary);
 }
 
