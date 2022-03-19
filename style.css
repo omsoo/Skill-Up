@@ -447,7 +447,8 @@ body {
 }
 
 .partlogo {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
+  filter:
+    invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
     contrast(10.5%);
 }
 
@@ -505,8 +506,11 @@ body {
   .cards-bottom-line {
     position: absolute;
     bottom: -20rem;
+
+    /* left: 42%; */
     left: 42%;
   }
+
   .nav-container {
     padding: 0 1.5rem;
   }
@@ -618,10 +622,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     margin: 2rem 2rem 5.5rem 2rem;
-  }
-
-  .cards-bottom-line {
-    left: 32%;
   }
 
   .courses {
