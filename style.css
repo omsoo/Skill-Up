@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
-
-/*
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/* 
 ================
 Variables
 ================
  */
 :root {
+  --clr-primary: #272a31;
+  --clr-primary-orange: #ec5242;
+  /* --clr-primary: #678e3e;
+  --clr-primary-light: #beed8c; */
+  --clr-grey-1: #d3d3d3;
+  --clr-white: #fff;
+  --ff-primary: "Lato", sans-serif;
+  --ff-secondary: "Grand Hotel", cursive;
   --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
 }
 
 /*
@@ -23,7 +32,7 @@ Default Styles
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--clr-grey-1);
   /* color: rgba(255, 255, 255, 1); */
 }
 
@@ -34,8 +43,8 @@ ul {
 }
 
 body {
-  font-family: "Nanum Gothic";
-  color: rgb(51, 51, 51);
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
 }
 
 .container {
@@ -175,7 +184,7 @@ body {
   padding: 2rem;
   margin: 0 7rem;
   color: #333333;
-  font-family: "Nanum Gothic";
+  font-family: var(--ff-primary);
   text-align: center;
   overflow-wrap: break-word;
 }
@@ -188,7 +197,7 @@ body {
 
 .about-section-1 {
   /* background: red; */
-  border-top: 4px solid rgb(246, 243, 248);
+  border-top: 4px solid;
 }
 .about-section-1-container {
   padding: 3rem 0;
@@ -226,7 +235,7 @@ body {
   border-top: 4px solid rgb(246, 243, 248);
 }
 .about-footer {
-  color: white;
+  color: var(--clr-grey-1);
   margin: 2rem 0;
 }
 
@@ -248,7 +257,7 @@ body {
   margin-top: 10px;
   padding: 0.3rem 0.5rem;
   color: #333333;
-  font-family: "Nanum Gothic";
+  font-family: var(--ff-primary);
 }
 
 .hero-schedule {
@@ -278,7 +287,7 @@ body {
 
 .cards-title {
   text-align: center;
-  color: aliceblue;
+  color: var(--clr-grey-1);
   margin: 15px;
 }
 .sub-grid-1 {
@@ -311,7 +320,7 @@ body {
 }
 .cd-description {
   margin-top: 1rem;
-  color: aliceblue;
+  color: var(--clr-grey-1);
   line-height: 1.5rem;
   /* margin-left: 1rem; */
   text-align: center;
@@ -319,7 +328,7 @@ body {
 
 .card-see-more {
   text-align: center;
-  color: aliceblue;
+  color: var(--clr-grey-1);
   /* border-bottom: 1px solid white; */
   /* width: 6rem; */
   /* background: orangered; */
@@ -336,9 +345,10 @@ body {
 }
 
 .h2-speaker {
-  color: red;
+  color: var(--clr-primary);
   text-align: center;
   margin: 2.5rem 0 12px 0;
+  text-transform: capitalize;
   /* border-bottom: 3px solid green; */
   /* margin: 1rem 10rem; */
 }
@@ -365,7 +375,7 @@ body {
 }
 
 .speaker-txt-2 {
-  color: #ec5242;
+  color: var(--clr-primary-orange);
   margin-bottom: 0.6rem;
   line-height: 1.4rem;
   font-style: italic;
@@ -377,17 +387,17 @@ body {
 }
 
 .line-breaker {
-  border: 0.5px solid red;
+  border: 0.5px solid var(--clr-primary-orange);
   width: 50px;
   margin: 0 auto;
 }
 .about-breaker {
-  border: 0.5px solid red;
+  border: 0.5px solid var(--clr-primary-orange);
   width: 20px;
   margin: 40px auto;
 }
 .about-breaker2 {
-  border: 0.5px solid red;
+  border: 0.5px solid var(--clr-primary-orange);
   width: 20px;
   margin: 10px auto;
 }
@@ -404,7 +414,7 @@ body {
 .course {
   display: flex;
   /* border: 2px solid red; */
-  background: white;
+  background: var();
   padding: 1rem 0;
 }
 
@@ -418,7 +428,7 @@ body {
 
 .partner-subject {
   text-align: center;
-  color: aliceblue;
+  color: var(--clr-grey-1);
   margin-bottom: 20px;
 }
 
@@ -443,7 +453,7 @@ body {
 }
 
 .partner-subject {
-  color: rgb(173, 168, 168);
+  color: var(--clr-grey-1);
   font-size: "Nanum Gothic";
   font-size: large;
 }
@@ -480,7 +490,7 @@ footer {
 }
 
 .narrow-ul > li {
-  color: white;
+  color: var(--clr-grey-1);
   font-size: 0.813em;
 }
 
