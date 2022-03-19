@@ -288,7 +288,7 @@ body {
 }
 
 .cards {
-  position: relative;
+  /* position: relative; */
   background-image: url("https://summit.cckorea.org/images/base/pattern_bg.png");
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
@@ -300,9 +300,11 @@ body {
   text-align: center;
   color: var(--clr-grey-1);
   margin: 15px;
+  font-size: 1.2rem;
 }
 
 .sub-grid-1 {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -336,7 +338,7 @@ body {
 
 .cards-bottom-line {
   position: absolute;
-  bottom: 3rem;
+  bottom: -12rem;
   left: 42%;
 }
 
@@ -432,6 +434,7 @@ body {
 }
 
 .partner-cover {
+  /* background: blue; */
   margin: 0 17rem;
   padding: 3rem 0;
 }
@@ -449,6 +452,7 @@ body {
 }
 
 .partlogo img {
+  /* background: green; */
   display: block;
   height: auto;
   width: 80%;
@@ -498,6 +502,11 @@ body {
 /* Mobile View */
 
 @media only screen and (max-width: 768px) {
+  .cards-bottom-line {
+    position: absolute;
+    bottom: -20rem;
+    left: 42%;
+  }
   .nav-container {
     padding: 0 1.5rem;
   }
@@ -639,12 +648,12 @@ body {
     font-size: 1.8rem;
   }
 
-  .partner-flex {
+  /* .partner-flex {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
-  }
+  } */
 
   .partlogo img {
     display: block;
@@ -652,12 +661,11 @@ body {
     width: 100%;
   }
 
-  /* .partners {
-    font-size: 1.2rem;
-    opacity: 0;
+  .partners {
+    z-index: -4;
   }
 
   .cards {
-    opacity: 0;
-  } */
+    z-index: -4;
+  }
 }
