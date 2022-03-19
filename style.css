@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-/* 
+
+/*
 ================
 Variables
 ================
@@ -7,11 +8,10 @@ Variables
 :root {
   --clr-primary: #272a31;
   --clr-primary-orange: #ec5242;
-
   --clr-grey-1: #d3d3d3;
   --clr-white: #fff;
   --ff-primary: "Lato", sans-serif;
-  --ff-secondary: "Grand Hotel", cursive;
+  --ff-secondary: "Grand Hotel", cursive sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -80,9 +80,11 @@ body {
 
 .narrow-links {
   float: right;
-  margin-right: 10rem;
+
+  /* margin-right: 10rem; */
+
   /* background: green; */
-  width: 18%;
+  width: 30%;
   padding: 0.4rem 0;
 }
 
@@ -108,13 +110,14 @@ body {
   justify-content: space-between;
   list-style: none;
 }
+
 .nav-links li a {
   font-size: 1.2rem;
-
   display: inline-block;
   padding: 8px 20px;
   color: var(--clr-primary);
 }
+
 .nav-links li a:hover {
   color: #0088a9;
 }
@@ -122,21 +125,23 @@ body {
 .nav-links .AboutCamp-link {
   color: #f55212;
 }
+
 .nav-campaign {
   border: 4px solid #f55212;
   height: 3rem;
   width: 8rem;
 }
+
 .nav-links .closeMenu {
   opacity: 0;
 }
+
 .openMenu {
   opacity: 0;
 }
 
 .main {
   background-image: url("https://summit.cckorea.org/images/base/main_big.png");
-
   background-position-x: center;
   background-repeat: no-repeat;
 }
@@ -180,12 +185,12 @@ body {
   height: auto;
   font-size: 1.2em;
   background-color: white;
-  width: 80%;
+  width: 100%;
   border: 1px solid #dfdfdf;
   line-height: 2rem;
   padding: 2rem;
-  margin: 0 7rem;
-  color: #333333;
+  margin: 0 1rem;
+  color: #333;
   font-family: var(--ff-primary);
   text-align: center;
   overflow-wrap: break-word;
@@ -205,6 +210,7 @@ body {
 .about-section-1 {
   border-top: 4px solid rgb(246, 243, 248);
 }
+
 .about-section-1-container {
   padding: 3rem 0;
   width: 70%;
@@ -213,10 +219,6 @@ body {
   text-align: center;
 }
 
-.about-sect-1-subject {
-  font-size: 2rem;
-  font-weight: bold;
-}
 .about-sect-1-description {
   line-height: 1.5rem;
   margin-bottom: 4rem;
@@ -239,6 +241,7 @@ body {
 .about-section-2 {
   border-top: 4px solid rgb(246, 243, 248);
 }
+
 .about-footer {
   color: var(--clr-grey-1);
   margin: 2rem 0;
@@ -247,8 +250,6 @@ body {
 
 .past-year-img {
   width: 93%;
-}
-.past-year-img {
   margin-top: 30px;
 }
 
@@ -258,7 +259,6 @@ body {
   width: 55%;
   display: inline-block;
   height: auto;
-
   border: 3px solid rgb(255, 255, 2550);
   font-size: 1rem;
   line-height: 1.6rem;
@@ -266,7 +266,6 @@ body {
   padding: 1.5rem 0.5rem;
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-
   overflow-wrap: break-word;
 }
 
@@ -285,10 +284,8 @@ body {
 }
 
 .cards {
-  position: relative;
-
+  /* position: relative; */
   background-image: url("https://summit.cckorea.org/images/base/pattern_bg.png");
-
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
   padding: 2rem 0;
@@ -299,48 +296,53 @@ body {
   text-align: center;
   color: var(--clr-grey-1);
   margin: 15px;
+  font-size: 1.2rem;
 }
+
 .sub-grid-1 {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-
   margin: 2rem 10rem 5.5rem 10rem;
   grid-gap: 0.2rem;
-
   height: 45%;
 }
+
 .card {
   display: grid;
   height: 350px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-items: center;
-
   padding: 1rem 0.9rem;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .cd-title {
   font-weight: bold;
   color: #ec5242;
   text-align: center;
 }
+
 .cd-description {
   margin-top: 1rem;
   color: var(--clr-grey-1);
   line-height: 1.5rem;
-
   text-align: center;
 }
+
 .cards-bottom-line {
   position: absolute;
-  bottom: 3rem;
+  bottom: -12rem;
   left: 42%;
 }
+
 .card-see-more {
   text-align: center;
   color: var(--clr-grey-1);
 }
+
 .line-breaker-white {
   width: 260px;
   margin: 0 auto;
@@ -385,6 +387,7 @@ body {
   font-style: italic;
   font-weight: bold;
 }
+
 .speaker-txt-3 {
   margin-top: 0.2rem;
   line-height: 1.4rem;
@@ -395,11 +398,13 @@ body {
   width: 50px;
   margin: 0 auto;
 }
+
 .about-breaker {
   border: 0.5px solid var(--clr-primary-orange);
   width: 20px;
   margin: 40px auto;
 }
+
 .about-breaker2 {
   border: 0.5px solid var(--clr-primary-orange);
   width: 20px;
@@ -410,14 +415,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
   margin: 2rem 10rem 0 10rem;
   height: 85%;
 }
 
 .course {
   display: flex;
-
   padding: 1rem 0;
   margin-bottom: 3rem;
 }
@@ -425,7 +428,9 @@ body {
 .partners {
   background: #393939;
 }
+
 .partner-cover {
+  /* background: blue; */
   margin: 0 17rem;
   padding: 3rem 0;
 }
@@ -434,16 +439,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-
   margin-top: 3rem;
 }
 
 .partlogo {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%)
-    contrast(10.5%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(90%) contrast(10.5%);
 }
 
 .partlogo img {
+  /* background: green; */
   display: block;
   height: auto;
   width: 80%;
@@ -452,8 +456,7 @@ body {
 .partner-subject {
   text-align: center;
   color: var(--clr-grey-1);
-  font-size: "Nanum Gothic";
-  font-size: large;
+  font-family: var(--ff-primary);
   margin-bottom: 20px;
   font-size: 1.6rem;
 }
@@ -468,6 +471,7 @@ body {
   margin: 0 15rem;
   padding: 3rem 0;
 }
+
 .footer-flex {
   display: flex;
 }
@@ -475,6 +479,16 @@ body {
 .foot-logo {
   margin-right: 3rem;
 }
+
+.about-sect-1-subject {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-right: -70px;
+
+  /* color: red; */
+}
+
 .foot-txt {
   padding: 1rem 0;
 }
@@ -492,18 +506,31 @@ body {
 /* Mobile View */
 
 @media only screen and (max-width: 768px) {
+  .cards-bottom-line {
+    position: absolute;
+    bottom: -20rem;
+
+    /* left: 42%; */
+    left: 42%;
+  }
+
+  .narrow-nav {
+    opacity: 0;
+  }
+
   .nav-container {
     padding: 0 1.5rem;
   }
+
   .navbar {
     background: purple;
   }
 
   .narrow-links {
     margin-right: -50px;
-
     width: 30%;
   }
+
   .nav-links {
     position: fixed;
     width: 100vw;
@@ -521,9 +548,22 @@ body {
     display: none;
   }
 
+  .about-logo-container {
+    margin-left: 50px;
+  }
+
+  /* .about-breaker2 {
+    margin-left: 270px;
+  } */
+
+  .about-section-1-container {
+    margin: 1rem 39px;
+  }
+
   .nav-links li a {
     color: var(--clr-grey-1);
   }
+
   .nav-links .closeMenu {
     opacity: 1;
     position: absolute;
@@ -533,6 +573,7 @@ body {
     cursor: pointer;
     color: var(--clr-grey-1);
   }
+
   .openMenu {
     opacity: 1;
     top: 30px;
@@ -540,6 +581,7 @@ body {
     font-size: 2rem;
     cursor: pointer;
   }
+
   .logo {
     opacity: 0;
   }
@@ -555,17 +597,21 @@ body {
 
   .hero-description {
     width: 100%;
-
     background: rgb(245, 242, 242);
     padding: 0.8rem 1.4rem;
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
 
+  .about-sect-1-description {
+    margin-left: 20px;
+    margin-right: -90px;
+    margin-top: 20px;
+  }
+
   .hero-schedule {
     width: 100%;
     height: auto;
-
     line-height: 2rem;
   }
 
@@ -585,6 +631,7 @@ body {
     height: auto;
     width: 100%;
   }
+
   .footer-cover {
     margin: 0 2rem;
   }
@@ -593,33 +640,30 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 90px;
+    width: 100%;
   }
 
   .sub-grid-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
     margin: 2rem 2rem 5.5rem 2rem;
-  }
-  .cards-bottom-line {
-    left: 32%;
   }
 
   .courses {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
     margin: 2rem 4rem 0 4rem;
   }
+
   .course {
     display: flex;
-
-    background: var();
     padding: 1rem 0;
     width: 100%;
   }
+
   .partner-cover {
     margin: 0 2rem;
   }
@@ -631,13 +675,12 @@ body {
     font-size: 1.8rem;
   }
 
-  .partner-flex {
+  /* .partner-flex {
     width: 100%;
     display: flex;
     flex-direction: row;
-
     margin-top: 3rem;
-  }
+  } */
 
   .partlogo img {
     display: block;
@@ -646,13 +689,10 @@ body {
   }
 
   .partners {
-    font-size: 1.2rem;
+    z-index: -4;
   }
 
   .cards {
-    opacity: 0;
-  }
-  .partners {
-    opacity: 0;
+    z-index: -4;
   }
 }
